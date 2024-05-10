@@ -1,0 +1,13 @@
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to Sachin Sonar's CARDS-DEV(DEFAULT) related local APIs "
+  contactDetails:
+    name: "Sachin  - Developer"
+    email: "Sachin@Dev.com"
+  onCallSupport:
+    - (412) 419-3491
+    - (915) 382-1932
+

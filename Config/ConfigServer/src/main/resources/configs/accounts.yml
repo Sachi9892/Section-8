@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Sachin Sonar's ACCOUNTS-DEV(DEFAULT) related local APIs "
+  contactDetails:
+    name: "Sachin Sonar - Developer"
+    email: "Sachin@dev.com"
+  onCallSupport:
+    - (555) 98920-77388
+    - (555) 12345-98765
+

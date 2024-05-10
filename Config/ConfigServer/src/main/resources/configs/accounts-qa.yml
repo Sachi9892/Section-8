@@ -1,0 +1,12 @@
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Sachin Sonar's ACCOUNTS-QA related local APIs "
+  contactDetails:
+    name: "Sachin Sonar's - QA"
+    email: "Sachin@Qa.com"
+  onCallSupport:
+    - (555) 82878-98765
+    - (555) 22338-00998

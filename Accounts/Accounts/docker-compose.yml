@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "sachi10/accounts:bankapp"
+    container_name: accounts_container
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank_service
+
+  cards:
+    image: "sachi10/cards:bankapp"
+    container_name: cards_container
+    ports:
+      - "9000:9090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank_service
+
+  loans:
+    image: "sachi10/loan:bankapp"
+    container_name: loans_container
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank_service
+
+networks:
+  bank_service:
+    driver: "bridge"

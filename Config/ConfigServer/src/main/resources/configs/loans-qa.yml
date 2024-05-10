@@ -1,0 +1,12 @@
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Sachin Sonar's LOANS-QA related local APIs "
+  contactDetails:
+    name: "Sachin Sonar's - Qa"
+    email: "Sachin@qa.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345

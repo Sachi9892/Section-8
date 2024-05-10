@@ -1,0 +1,12 @@
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Sachin Sonar's CARDS-QA related local APIs "
+  contactDetails:
+    name: "Sachin Sonar's - Qa"
+    email: "Sachin@Qa.com"
+  onCallSupport:
+    - (555) 98920-77388
+    - (555) 523-1345

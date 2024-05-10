@@ -1,0 +1,64 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  application:
+    name: "cards"
+  profiles:
+    active:
+      - "prod"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+  h2:
+    console:
+      enabled:true
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+endpoints:
+  shutdown:
+    enabled: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    #name for the feign client
+    name: "cards"
+    description: "sachin's cards application"
+    version: "1.0.0"
+
+
